@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+<h2 class="titulotres"> <center> SE SOLICITA ACCESO AUTORIZADO </center> </h2>
+
+<section class="contener_carga">
+
+<form action="validar.php" method="post" class="formulario">
+    <input type="text" name="usuario" required placeholder="Ingrese Usuario">
+    <input type="password" name="clave" required placeholder="Ingrese Clave">
+    <a href="panel.php"><input type="submit" value="Ingresar"></a>
+</form>
+
+</section>
+
+</body>
+</html>
