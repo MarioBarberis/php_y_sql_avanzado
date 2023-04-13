@@ -1,0 +1,22 @@
+<?php
+
+class ControladorFormularios{
+   /*  Registro */
+
+static public function ctrRegistro(){
+    if (isset($_POST["registroNombre"])){
+
+        $tabla = "registro";
+        $datos = array (
+            "nombre" => $_POST["registroNombre"],
+            "email" => $_POST["registroEmail"],
+            "password" => $_POST["registroPassword"]
+        );
+
+
+    $respuesta = ModelosFormularios::mdlRegistro($tabla, $datos);
+    return $respuesta;
+    }
+}
+
+}
