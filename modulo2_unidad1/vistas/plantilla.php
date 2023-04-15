@@ -16,6 +16,7 @@
         <center><h1>SISTEMA DE PEDIDOS</h1></center>
             <nav id="botonera_principal">
                 <ul>
+                    <li><a href="index.php?ruta=registro">Registro</a></li>
                     <li><a href="index.php?ruta=realizar">Realizar</a></li>
                     <li><a href="index.php?ruta=ver">Ver</a></li>
                     <li><a href="index.php?ruta=finalizar">Finalizar</a></li>
@@ -34,6 +35,7 @@
 
             if (isset($_GET["ruta"])) {
                 if (
+                    $_GET["ruta"] == "registro" ||
                     $_GET["ruta"] == "realizar" ||
                     $_GET["ruta"] == "ver" ||
                     $_GET["ruta"] == "finalizar" ||

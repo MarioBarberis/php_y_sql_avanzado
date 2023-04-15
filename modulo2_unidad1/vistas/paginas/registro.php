@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Registro</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
     <input type="text" id="nombre" name="registroNombre">
 
     <label for="email">Email:</label>
-    <input type="text" id="email" name="registroEmail">
+    <input type="email" id="email" name="registroEmail">
 
     <label for="pwd">Contraseña:</label>
-    <input type="text" id="pwd" name="registroPassword">
+    <input type="password" id="pwd" name="registroPassword">
     </div>
 
     <?php
@@ -28,8 +29,8 @@
 
     ?>
 
-    <input type="submit" value="enviar" class="enviar">
-
+   <!--  <input type="submit" value="enviar" class="enviar">  -->
+    <button type="submit" name="enviar" class="enviar">Enviar</button>
     </form>
 </div>
 
